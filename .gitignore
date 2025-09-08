@@ -1,9 +1,7 @@
-# Node / VS Code extension basics
 node_modules/
 *.vsix
 .DS_Store
 .idea/
 .vscode/
-.env
 dist/
 out/

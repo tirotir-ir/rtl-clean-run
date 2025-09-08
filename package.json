@@ -2,8 +2,8 @@
   "name": "vscode-rtl-clean-run",
   "displayName": "RTL Clean Run (UTF‑8)",
   "description": "Run Python with UTF‑8 and show clean, right-to-left output for Persian/Arabic in a Webview. Includes Presentation Mode, Step Trace, and Interactive Shell.",
-  "publisher": "daryoush-alipour-tirotir",
-  "version": "1.0.0",
+  "publisher": "daryoushalipourtirotir",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.75.0"
   },
