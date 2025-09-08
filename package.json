@@ -1,0 +1,78 @@
+{
+  "name": "vscode-rtl-clean-run",
+  "displayName": "RTL Clean Run (UTF‑8)",
+  "description": "Run Python with UTF‑8 and show clean, right-to-left output for Persian/Arabic in a Webview. Includes Presentation Mode, Step Trace, and Interactive Shell.",
+  "publisher": "daryoush-alipour-tirotir",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:tirotir.runUtf8Clean",
+    "onCommand:tirotir.switchTheme",
+    "onCommand:tirotir.togglePresentation",
+    "onCommand:tirotir.runStepTrace",
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tirotir.runUtf8Clean",
+        "title": "Run with Tirotir Shell (UTF‑8, RTL)"
+      },
+      {
+        "command": "tirotir.switchTheme",
+        "title": "Tirotir Shell: Switch Theme (Dark/Light/Classroom)"
+      },
+      {
+        "command": "tirotir.togglePresentation",
+        "title": "Tirotir Shell: Toggle Presentation Mode"
+      },
+      {
+        "command": "tirotir.runStepTrace",
+        "title": "Tirotir Shell: Run Step Trace (Preview)"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "tirotir.runUtf8Clean",
+          "group": "navigation@100"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "tirotir.runUtf8Clean",
+          "group": "navigation@100"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "tirotir.runUtf8Clean"
+        },
+        {
+          "command": "tirotir.switchTheme"
+        },
+        {
+          "command": "tirotir.togglePresentation"
+        },
+        {
+          "command": "tirotir.runStepTrace"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "echo Prepublish done"
+  },
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/tirotir/vscode-rtl-clean-run"
+  }
+}
